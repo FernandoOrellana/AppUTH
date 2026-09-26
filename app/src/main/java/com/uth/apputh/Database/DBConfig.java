@@ -18,13 +18,14 @@ public class DBConfig {
     public static final String COLUMN_CORREO = "correo";
 
 
-    public static final  String CREATE_TABLE_PERSONAS = "CREATE TABLE "
-            + TABLE_PERSONAS + "(" + COLUMN_ID + "INTEGER PRIMARY KEY AUTOINCREMENT,"
-            + COLUMN_NOMBRE + " TEXT NOT NULL,"
-            + COLUMN_APELLIDO + " TEXT NOT NULL,"
-            + COLUMN_FECHA_NACIMIENTO + "TEXT NOT NULL,"
-            + COLUMN_DIRECCION + "TEXT,"
-            + COLUMN_TELEFONO + "TEXT,"
-            + COLUMN_CORREO + "TEXT)";
+    public static final String CREATE_TABLE_PERSONAS = "CREATE TABLE "
+            + TABLE_PERSONAS + " ("
+            + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
+            + COLUMN_NOMBRE + " TEXT NOT NULL, "
+            + COLUMN_APELLIDO + " TEXT NOT NULL, "
+            + COLUMN_FECHA_NACIMIENTO + " TEXT NOT NULL, "
+            + COLUMN_DIRECCION + " TEXT, "
+            + COLUMN_TELEFONO + " TEXT, "
+            + COLUMN_CORREO + " TEXT)";
 
 }
