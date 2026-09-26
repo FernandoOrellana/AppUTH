@@ -28,4 +28,8 @@ public class DBConfig {
             + COLUMN_TELEFONO + " TEXT, "
             + COLUMN_CORREO + " TEXT)";
 
+
+
+    public static final String DROP_TABLE_PERSONAS = "DROP TABLE IF EXISTS " + TABLE_PERSONAS;
+    public static final String SELECT_ALL_PERSONAS = "SELECT * FROM " + TABLE_PERSONAS;
 }
