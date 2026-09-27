@@ -5,128 +5,101 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F8F9FA"
     tools:context=".Views.ActivityPersonas">
 
-    <EditText
-        android:id="@+id/nombresTxt"
-        android:layout_width="729dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
-        android:ems="10"
-        android:hint="@string/Nombre"
-        android:inputType="text"
-        android:rotationX="1"
-        android:rotationY="1"
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.065" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <EditText
-        android:id="@+id/ApellidoText"
-        android:layout_width="726dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
-        android:ems="10"
-        android:hint="@string/Apellido"
-        android:inputType="text"
-        android:rotationX="1"
-        android:rotationY="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.391"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.124" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="24dp">
 
-    <EditText
-        android:id="@+id/FechaNacimientoTxt"
-        android:layout_width="732dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
-        android:ems="10"
-        android:hint="@string/FechaNacimient"
-        android:inputType="text"
-        android:rotationX="1"
-        android:rotationY="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.177" />
+            <EditText
+                android:id="@+id/nombresTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:ems="10"
+                android:hint="@string/Nombre"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textColorHint="#8B8B8B" />
 
-    <EditText
-        android:id="@+id/DireccionTxt"
-        android:layout_width="729dp"
-        android:layout_height="72dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
-        android:ems="10"
-        android:hint="@string/Direccion"
-        android:inputType="text"
-        android:rotationX="1"
-        android:rotationY="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.408"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.255" />
+            <EditText
+                android:id="@+id/ApellidoText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:ems="10"
+                android:hint="@string/Apellido"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textColorHint="#8B8B8B" />
 
-    <EditText
-        android:id="@+id/TelefonoTxt"
-        android:layout_width="730dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
-        android:ems="10"
-        android:hint="@string/Telefono"
-        android:inputType="number"
-        android:rotationX="1"
-        android:rotationY="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.414"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.342" />
+            <EditText
+                android:id="@+id/FechaNacimientoTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:ems="10"
+                android:hint="@string/FechaNacimient"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textColorHint="#8B8B8B" />
 
-    <EditText
-        android:id="@+id/CorreTxt"
-        android:layout_width="738dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
-        android:ems="10"
-        android:hint="@string/Correo"
-        android:inputType="text|textEmailAddress"
-        android:rotationX="1"
-        android:rotationY="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.467"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.413" />
+            <EditText
+                android:id="@+id/DireccionTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:ems="10"
+                android:hint="@string/Direccion"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textColorHint="#8B8B8B" />
 
-    <Button
-        android:id="@+id/buttonAgregar"
-        android:layout_width="757dp"
-        android:layout_height="70dp"
-        android:layout_marginBottom="524dp"
-        android:backgroundTint="#536ED0"
-        android:rotationX="1"
-        android:rotationY="1"
-        android:text="@string/AgregarPersona"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.697"
-        app:layout_constraintStart_toStartOf="parent" />
+            <EditText
+                android:id="@+id/TelefonoTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:ems="10"
+                android:hint="@string/Telefono"
+                android:inputType="number"
+                android:padding="12dp"
+                android:textColorHint="#8B8B8B" />
+
+            <EditText
+                android:id="@+id/CorreTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:ems="10"
+                android:hint="@string/Correo"
+                android:inputType="text|textEmailAddress"
+                android:padding="12dp"
+                android:textColorHint="#8B8B8B" />
+
+            <Button
+                android:id="@+id/buttonAgregar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#4A6FD7"
+                android:padding="14dp"
+                android:text="@string/AgregarPersona"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
