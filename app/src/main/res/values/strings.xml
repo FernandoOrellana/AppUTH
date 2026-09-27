@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">AppUTH</string>
+    <string name="Nombre">Nombre</string>
+    <string name="Apellido">Apellido</string>
+    <string name="FechaNacimiento" />
+    <string name="FechaNacimient">FechaNacimiento</string>
+    <string name="Direccion">Direccion</string>
+    <string name="Telefono">Telefono</string>
+    <string name="Correo">Correo</string>
+    <string name="AgregarPersona">Agregar Persona</string>
 </resources>
